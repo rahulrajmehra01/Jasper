@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TOS105_RSE_EXCEL" pageWidth="1196" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="46d045cc-5733-4a8a-ab8c-f40ee681614b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="remarks" class="java.lang.String"/>
+	<field name="recordAddUser" class="java.lang.String"/>
+	<field name="recordAddDate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="0" width="949" height="25" uuid="58bd4379-8954-4b6d-a27b-f84e24eff310">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a07ce33-312c-41e5-8edb-24b51bd88469"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="949" y="0" width="107" height="25" uuid="94244617-1249-4191-9eb0-1dcb27c049f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6bfd9e7d-7ada-4dd9-97dd-34949c21daab"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Record Add 
+User]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1056" y="0" width="119" height="25" uuid="ef05079e-8b8e-4ec3-a198-e8045022edb1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc52057f-6458-421b-818c-971db5744583"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Record Add Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="949" height="15" uuid="b02ecec0-8f09-4393-b6ba-c5a12c74b377">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3a07ce33-312c-41e5-8edb-24b51bd88469"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="949" y="0" width="107" height="15" uuid="7ae8ca9b-bc24-4631-a06c-9ef0223aff58">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6bfd9e7d-7ada-4dd9-97dd-34949c21daab"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recordAddUser}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1056" y="0" width="119" height="15" uuid="4d588fcf-a36b-4e6f-8998-47e0ad7c82bc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc52057f-6458-421b-818c-971db5744583"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recordAddDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

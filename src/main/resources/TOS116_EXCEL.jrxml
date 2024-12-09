@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TOS116_EXCEL" pageWidth="1155" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9d240f1f-7f9e-4de6-8aba-c576bd7a6152">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="listStatusBy" class="java.lang.String"/>
+	<parameter name="port" class="java.lang.String"/>
+	<parameter name="portTerminal" class="java.lang.String"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="toDate" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="number" class="java.lang.String"/>
+	<field name="month" class="java.lang.String"/>
+	<field name="noOfVesselClosedLoadList" class="java.lang.Integer"/>
+	<field name="noOfVesselNotClosedLoadList" class="java.lang.Integer"/>
+	<field name="noOfVesselNotCreateLoadList" class="java.lang.Integer"/>
+	<field name="noOfVesselClosedDischargeList" class="java.lang.Integer"/>
+	<field name="noOfVesselNotClosedDischargeList" class="java.lang.Integer"/>
+	<field name="noOfVesselNotCreateDischargeList" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="17" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="56" height="17" uuid="0011ee8d-2ddb-4115-aafb-f61807389137">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ff2f751-f3ac-4d01-b551-9fd7aade7725"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="0" width="84" height="17" uuid="ddb58ca5-69e3-48d4-a26f-690ce51e7118">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df18c1ed-bc9f-4ed9-9cb3-b4146e88e233"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="150" height="17" uuid="dfb06f5c-615a-4bc9-b99c-4ceb44b78526">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e0f5354-43f3-4960-b9e4-97b637994f0b"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Closed (Load List)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="158" height="17" uuid="cbb678df-298a-4ace-b930-c537522e5aac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="205af0a8-da85-4943-a6c9-8541edab84e6"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Not Closed (Load List)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="0" width="160" height="17" uuid="16c44cd5-322c-4798-bec5-8ac7faf1647f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eccda61e-6b4b-49b8-99cc-a035fcd23bad"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Not Create (Load List)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="608" y="0" width="162" height="17" uuid="5025705c-6829-4045-8c96-e4e1f995ac43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1720230a-de0e-47c0-a244-d94654aafcd2"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Closed (Discharge List)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="770" y="0" width="173" height="17" uuid="a3c122e7-086c-403c-a47c-d43b697b24f9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e9cb478-d3a3-4894-8f31-c81efdf84ea3"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Not Closed (Discharge List)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="943" y="0" width="172" height="17" uuid="c69ef87f-6a03-44aa-8783-e29e556702f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e30c8525-7478-431f-9bfa-372c70625ed6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of Vessel Not Create (Discharge List)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="56" height="15" uuid="a67484d7-4099-4249-9146-9a61e35b099a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ff2f751-f3ac-4d01-b551-9fd7aade7725"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="0" width="84" height="15" uuid="8e76e3df-a58d-4784-84be-2ff7678cbac2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df18c1ed-bc9f-4ed9-9cb3-b4146e88e233"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="0" width="150" height="15" uuid="26b73458-368a-4c53-9b26-2ea5a651c225">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e0f5354-43f3-4960-b9e4-97b637994f0b"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselClosedLoadList}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="0" width="158" height="15" uuid="6858033d-33c6-45a4-9c93-d852427a9c59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="205af0a8-da85-4943-a6c9-8541edab84e6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselNotClosedLoadList}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="448" y="0" width="160" height="15" uuid="4b0f7469-eddb-4779-8472-a3dd74c3077d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eccda61e-6b4b-49b8-99cc-a035fcd23bad"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselNotCreateLoadList}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="608" y="0" width="162" height="15" uuid="ab0c27f7-c6ac-4703-9f6d-7bfdc6c3f020">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1720230a-de0e-47c0-a244-d94654aafcd2"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselClosedDischargeList}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="770" y="0" width="173" height="15" uuid="4edd056f-db00-4e1b-b49e-ea193a04d13f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e9cb478-d3a3-4894-8f31-c81efdf84ea3"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselNotClosedDischargeList}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="943" y="0" width="172" height="15" uuid="2d669216-d7ed-40a7-b0d1-31cf4a3881bf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e30c8525-7478-431f-9bfa-372c70625ed6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOfVesselNotCreateDischargeList}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

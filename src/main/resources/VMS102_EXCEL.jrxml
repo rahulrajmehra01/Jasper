@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="VMS102_EXCEL" pageWidth="1122" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="38639f86-0fc7-46e5-93c9-9679bbadcadd">
+	<parameter name="performaNo" class="java.lang.String"/>
+	<parameter name="performaStatus" class="java.lang.String"/>
+	<parameter name="service" class="java.lang.String"/>
+	<parameter name="vessel" class="java.lang.String"/>
+	<parameter name="voyage" class="java.lang.String"/>
+	<parameter name="direction" class="java.lang.String"/>
+	<parameter name="pol" class="java.lang.String"/>
+	<parameter name="polTerminal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="proformaNo" class="java.lang.String"/>
+	<field name="fsc" class="java.lang.String"/>
+	<field name="service" class="java.lang.String"/>
+	<field name="vessel" class="java.lang.String"/>
+	<field name="voyage" class="java.lang.String"/>
+	<field name="direction" class="java.lang.String"/>
+	<field name="port" class="java.lang.String"/>
+	<field name="polTerminal" class="java.lang.String"/>
+	<field name="exchangeRate" class="java.lang.Number"/>
+	<field name="blNo" class="java.lang.String"/>
+	<field name="cocSoc" class="java.lang.String"/>
+	<field name="importExport" class="java.lang.String"/>
+	<field name="freightSurcharge" class="java.lang.String"/>
+	<field name="prepaidCollect" class="java.lang.String"/>
+	<field name="amountCurrency" class="java.lang.Number"/>
+	<field name="portName" class="java.lang.String"/>
+	<field name="taxRate" class="java.lang.Number"/>
+	<field name="freightTaxAmount" class="java.lang.Number"/>
+	<field name="currency" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="82" height="20" uuid="9a9c1626-3e70-4b2f-81b7-6f6523765b72"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Proforma No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="0" width="24" height="20" uuid="0a6cadfe-474e-426e-9aee-fcd795102cd5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FSC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="0" width="33" height="20" uuid="94051a55-11f2-410b-a9e6-6723847ad4a1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vessel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="0" width="36" height="20" uuid="a317fca7-abe6-4ce6-b42c-74c9373b9e06"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="0" width="45" height="20" uuid="bb1293ec-eadb-416f-b81b-8882761c8dc5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Terminal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="0" width="33" height="20" uuid="8f36f6d4-aea6-49bd-8b86-d06eded339ea"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Port]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="42" height="20" uuid="049cc74c-2c08-4aa1-a150-cc3dfde71979"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Direction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="0" width="55" height="20" uuid="9304d6c6-2ff2-418a-b5eb-1bc85ffebf66"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Voyage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="0" width="112" height="20" uuid="63f60835-f3cb-4c8b-a804-ee2d191ac1e6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rate of Exch USD toTHB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="585" y="0" width="62" height="20" uuid="9018c65c-9733-4b15-8206-241718fddc26"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Import/Export]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="0" width="45" height="20" uuid="e1b35eea-480a-44c0-ac4e-588d3463ec3a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COC/SOC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="464" y="0" width="76" height="20" uuid="ef81dea5-6585-4bfb-b417-07239e8f032a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[B/L No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="860" y="0" width="45" height="20" uuid="0d862b5d-9d91-4518-9496-68b3c9076560"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Currency]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="820" y="0" width="40" height="20" uuid="223a1595-7176-4f3f-9aab-390c2ab410c8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="753" y="0" width="67" height="20" uuid="e8b226c2-7a38-4920-80fb-ebb0c5798778"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prepaid/Collect]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="647" y="0" width="106" height="20" uuid="f5cb1316-2335-4779-8509-3e7965b29afa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Freight/Surcharge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="905" y="0" width="48" height="20" uuid="38bd7597-92f0-4edb-a103-15438cc9861f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tax Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="953" y="0" width="96" height="20" uuid="2cc259e6-d5c3-4b88-884c-10c3fff818ed">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Freight Tax Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1051" y="0" width="50" height="20" uuid="3c193215-2922-4cba-a935-f76058e0aaf1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Currency]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{proformaNo} != null || $F{fsc} != null || $F{service} != null || $F{vessel} != null || $F{voyage} != null || $F{direction} != null]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="82" height="22" uuid="d8e3c113-4b66-43b8-a6cf-b33fdef08b5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8796dc42-3ca8-46dc-8673-a348b7e351e7"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proformaNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="82" y="0" width="24" height="22" uuid="fcf7ffc2-36a0-48fe-8bc1-9ae588f71ba7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d7c6bef4-b3fd-4147-9f52-d29d57f89783"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fsc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="106" y="0" width="36" height="22" uuid="bda0c669-8c13-4e1e-ab47-89ec6dc925c5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8d69f765-9d4c-4596-8562-5efb41f996d5"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{service}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="0" width="33" height="22" uuid="28ea0f51-f234-4adb-ba72-9a0cb002535c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd7e5d64-fbbe-48d4-8258-ec41ed079003"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="175" y="0" width="55" height="22" uuid="a6681dcd-6619-4d02-b152-72498fe579b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e62dad1-0c06-43db-9cfc-06944acac4e3"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{voyage}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="230" y="0" width="42" height="22" uuid="1440f78a-c153-4097-a11e-e2077104b9f4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a316626d-d573-4fba-80ce-ef3fed52d7cc"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direction}.equals("N") ? "North" :
+$F{direction}.equals("S") ? "South" :
+$F{direction}.equals("E") ? "East" :
+$F{direction}.equals("W") ? "West" :
+$F{direction}.equals("R") ? "Round" :
+$F{direction}.equals("NE") ? "North East" :
+$F{direction}.equals("NW") ? "North West" :
+$F{direction}.equals("SE") ? "South East" :
+$F{direction}.equals("SW") ? "South West" :
+"ALL"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="272" y="0" width="33" height="22" uuid="848283a5-bb06-42c3-8fb4-f45cedef67bd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d866f456-5432-4964-987e-d6c83a13f05b"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{port}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="305" y="0" width="45" height="22" uuid="5ec01e82-89e8-4880-8e70-0f6393d3dac1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd702b24-0ed2-4953-9e6f-b49de0456a0b"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{polTerminal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="350" y="0" width="112" height="22" uuid="83752d07-c854-41b2-82eb-590b10be11da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2cdcda68-de92-4088-bc0e-adbf3653e8d5"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exchangeRate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="464" y="0" width="76" height="22" uuid="e0bfd92b-93b2-4516-8f26-75485bbf7f77">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a794f2eb-7f83-42ea-8d84-38950ab52bbb"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{blNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="540" y="0" width="45" height="22" uuid="e8e21221-3338-42c3-a5e0-1f0f3be13a34">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13a321fc-1a81-4029-8d34-698ce9087999"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cocSoc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="585" y="0" width="62" height="22" uuid="1a7b8d54-1038-46d6-8687-e279e7ec1cf6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c2fe390e-6556-4590-873c-5c57a5c3dc02"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importExport}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="647" y="0" width="106" height="22" uuid="c3468557-fac2-4c1f-bf83-ea1d59023ebe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ef795da-35a2-4815-8622-24c1ec5bc81c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{freightSurcharge}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="753" y="0" width="67" height="22" uuid="db95dafc-701e-42eb-8953-f6573955ca47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9940b33c-564e-4247-8d94-bd2cbbdfbc6f"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prepaidCollect}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00#;(#,##0.00#)" isBlankWhenNull="true">
+				<reportElement x="820" y="0" width="40" height="22" uuid="c6f5861e-70d5-4cb6-babf-475aff092639">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bfbaed43-b110-4034-939e-05962f561202"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amountCurrency}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="860" y="0" width="45" height="22" uuid="e2c071d0-ac37-44e9-9701-d3c6c1b7243f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="efb02e1b-d0bd-407a-bade-7687317e8170"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{portName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="905" y="0" width="48" height="22" uuid="19d0c08b-2aa9-4469-8974-a73b725187ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e66288a-45e7-40f3-98f3-d96a20dc7b0d"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxRate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00#;(#,##0.00#)" isBlankWhenNull="true">
+				<reportElement x="953" y="0" width="96" height="22" uuid="d9277447-2462-4ba1-b11c-fc8fbc5df5cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b5a84c7-17f8-4d8f-b232-7e8794aed4a5"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{freightTaxAmount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1051" y="0" width="50" height="22" uuid="fc61d0ac-8187-4fc3-9cca-59a3b33d6ad3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2fb72501-bc25-4bbe-86cc-befa4ea705eb"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="18" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{proformaNo} == null && $F{fsc} == null && $F{service} == null && $F{vessel} == null && $F{voyage} == null]]></printWhenExpression>
+			<staticText>
+				<reportElement x="363" y="0" width="87" height="18" uuid="fb06f1c7-19c1-46e0-a2fa-45ab2e08ac8c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Information]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

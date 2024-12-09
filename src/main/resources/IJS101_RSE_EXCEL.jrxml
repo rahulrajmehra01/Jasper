@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IJS101_RSE_EXCEL" pageWidth="1860" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="60f2f858-c9f5-4121-b7dd-8cdcf61af32f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="toDate" class="java.lang.String"/>
+	<parameter name="jobOrderNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="jobOrderType" class="java.lang.String"/>
+	<field name="jobOrderNum" class="java.lang.String"/>
+	<field name="jobOrderVersion" class="java.lang.Integer"/>
+	<field name="vendorName" class="java.lang.String"/>
+	<field name="reasonCode" class="java.lang.String"/>
+	<field name="creationDate" class="java.lang.String"/>
+	<field name="creationTime" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="fullName" class="java.lang.String"/>
+	<field name="joStatus" class="java.lang.String"/>
+	<field name="joCancel" class="java.lang.String"/>
+	<field name="joTotalLocalCost" class="java.lang.String"/>
+	<field name="joTotalUsdCost" class="java.lang.String"/>
+	<field name="fromLocationType" class="java.lang.String"/>
+	<field name="frLoc" class="java.lang.String"/>
+	<field name="frTerminal" class="java.lang.String"/>
+	<field name="toLocationType" class="java.lang.String"/>
+	<field name="toLoc" class="java.lang.String"/>
+	<field name="toTerminal" class="java.lang.String"/>
+	<field name="issueDate" class="java.lang.String"/>
+	<field name="startDate" class="java.lang.String"/>
+	<field name="completeDate" class="java.lang.String"/>
+	<field name="invoiceDate" class="java.lang.String"/>
+	<field name="cancelDate" class="java.lang.String"/>
+	<field name="recoveryRequired" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="-1" width="79" height="15" uuid="455b59d3-32e5-41e6-8f8b-59e10f2b9b53">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1973a160-0d3e-45f8-9140-e25ca7115ce6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JOB_ORDER_TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="-1" width="80" height="15" uuid="082bf270-7dc6-4a84-b9b5-c300e51de768">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bf65d78f-eac9-4b20-813a-b9f3faabefcb"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JOB_ORDER_NUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="-1" width="92" height="15" uuid="edda4ef7-1e2c-4753-a6d0-f6612a5c1b07">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38cae57e-15c1-413a-b1e8-617d1ced4d26"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JOB_ORDER_VERSION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="-1" width="70" height="15" uuid="53c28923-6268-4f0a-8176-10fba56833a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3aefa4e8-ab01-4541-89cf-5788147bb000"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENDOR_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="-1" width="70" height="15" uuid="6397ce67-24f3-415c-8537-e93a2b31de45">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a38c72d5-167e-4aa6-b7f0-7d60a8e8a75c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REASON_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="-1" width="76" height="15" uuid="e138b600-065e-4a24-909b-30ab8506268b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a42fe270-1aeb-4b97-860c-e4191983efcf"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREATION_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="-1" width="72" height="15" uuid="dbce709b-5ce8-4dad-813e-4e35ac1fabe3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46c6ce96-76af-489a-b130-ad9f12f1a822"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREATION_TIME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="-1" width="62" height="15" uuid="4028a174-ae83-4fec-adfc-658406b673ae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2096d572-fabb-450d-b425-d9a5c4f0c32e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREATED_BY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="605" y="-1" width="57" height="15" uuid="b2e856e3-c29b-4d29-b931-b5f1767c084c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef187234-eead-48cb-b5ab-0ed33e36798c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FULL_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="662" y="-1" width="60" height="15" uuid="641903dc-2176-4e1a-b46b-d1bd1ca076ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b31d8475-1ca6-4512-890a-d48d5507cc8c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JO_STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="722" y="-1" width="69" height="15" uuid="ef6c023e-5462-4f3e-8532-a70bd5d305d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3694b217-f542-42ee-99f3-40e7b2dbc914"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JO_CANCEL_YN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="791" y="-1" width="103" height="15" uuid="1667766a-cb72-4972-9908-906681cb4090">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4275e018-11b3-4f6b-9dc2-cd609c625eb2"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JO_TOTAL_LOCAL_COST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="894" y="-1" width="91" height="15" uuid="63a78ec3-e922-4166-b984-bbed0e2a4809">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21ede69d-8e4e-432e-a033-90dacea775fc"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JO_TOTAL_USD_COST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="988" y="-1" width="98" height="15" uuid="9592a7a5-04b0-43ef-bcff-6d54a8ab51c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f65d7acf-9540-4cfa-a845-3c0e25618ad3"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FROM_LOCATION_TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1086" y="-1" width="40" height="15" uuid="0bec5883-7617-487e-8d53-0db5b2d1ba29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="354d7407-6740-442e-bd53-a3dfffcbaa63"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FR_LOC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1126" y="-1" width="62" height="15" uuid="3a87e8db-892d-41f8-9f8e-e133cddf928c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4becd200-23c4-447a-bff3-b2b6c5664c29"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FR_TERMINAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1188" y="-1" width="87" height="15" uuid="8c80951a-7d26-4da9-91c9-2cf90492f74e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7a24f8c-f5d6-466f-bcad-03746557a52c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO_LOCATION_TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1275" y="-1" width="44" height="15" uuid="edd8277c-a03b-4362-8622-41e1c75cb578">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="547e4d05-f789-4a7b-a10c-c9b3b7a45068"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO_LOC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1319" y="-1" width="66" height="15" uuid="66f0b574-5433-4d2d-a389-5001612356be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96277deb-5ae8-4bc7-8ae4-a9a26939d459"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO_TERMINAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1385" y="-1" width="58" height="15" uuid="e795b91f-51ec-4ef9-98dc-3c8c38698939">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b9f9e58-cac9-4a1b-91e1-e124b96776cd"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISSUE_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1443" y="-1" width="60" height="15" uuid="2b0b4516-9c84-41e7-ab1a-438b1d8bb241">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43aef0ed-f88f-4e62-8a89-f7168c82285c"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[START_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1503" y="-1" width="77" height="15" uuid="77ac8eb7-70f4-469f-b5a4-278823304ec3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b71f7e4-d115-4316-ad2f-b84624df353e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPLETE_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1580" y="-1" width="69" height="15" uuid="e193134f-8b82-4327-ba5e-d5f7eb615971">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e16fd309-5c93-4c3c-a9b2-531451bf6140"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INVOICE_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1649" y="-1" width="69" height="15" uuid="f74f98e5-f629-4d45-838b-32818286e176">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c5efbd2-79de-48ae-9f47-7d57710049ee"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CANCEL_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1718" y="-1" width="102" height="15" uuid="aedaa219-4fe3-4b79-bcf1-541682ff67ba">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3691faed-4cdd-495b-b5b9-ecbb438d78dd"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECOVERY_REQUIRED]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="78" height="15" uuid="3c0f4996-85b7-42c2-a4fe-23f86f290506">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1973a160-0d3e-45f8-9140-e25ca7115ce6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jobOrderType}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="78" y="0" width="81" height="15" uuid="77a868b8-2e0c-446b-a67a-5208559281e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bf65d78f-eac9-4b20-813a-b9f3faabefcb"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jobOrderNum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="159" y="0" width="92" height="15" uuid="2566b2a4-687c-4206-9c95-aaa57f06cd1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38cae57e-15c1-413a-b1e8-617d1ced4d26"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jobOrderVersion}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="255" y="0" width="70" height="15" uuid="2de57ff3-37c1-4ba1-bac0-b074920ee792">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3aefa4e8-ab01-4541-89cf-5788147bb000"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vendorName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="325" y="0" width="70" height="15" uuid="72332825-7268-4484-80ee-ecd7b64200dc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a38c72d5-167e-4aa6-b7f0-7d60a8e8a75c"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reasonCode}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="395" y="0" width="76" height="15" uuid="076e77fa-c838-4fff-8bd3-49297688ec4b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a42fe270-1aeb-4b97-860c-e4191983efcf"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creationDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="471" y="0" width="72" height="15" uuid="ad4d80fa-c546-4a3d-9a9c-8efc02e435d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46c6ce96-76af-489a-b130-ad9f12f1a822"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creationTime}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="543" y="0" width="62" height="15" uuid="1b167da1-34cb-4492-9124-1fc9739929df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2096d572-fabb-450d-b425-d9a5c4f0c32e"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdBy}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="605" y="0" width="57" height="15" uuid="2c531157-c7ee-42e3-aed2-c2eb92c3b61a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef187234-eead-48cb-b5ab-0ed33e36798c"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="662" y="0" width="60" height="15" uuid="fefba55f-8f41-4c86-b90e-9bc93151a796">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b31d8475-1ca6-4512-890a-d48d5507cc8c"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{joStatus}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="722" y="0" width="69" height="15" uuid="418a4c7d-f7b2-4004-a7c9-1d07e3f72514">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3694b217-f542-42ee-99f3-40e7b2dbc914"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{joCancel}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="791" y="0" width="103" height="15" uuid="9229e95a-512f-4ec8-b206-8f74be607809">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4275e018-11b3-4f6b-9dc2-cd609c625eb2"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{joTotalLocalCost}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="894" y="0" width="91" height="15" uuid="445630b0-c9a2-4caf-8d82-a2aaca899ba6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21ede69d-8e4e-432e-a033-90dacea775fc"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{joTotalUsdCost}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="988" y="0" width="98" height="15" uuid="62f9910c-1e46-4b47-bdd0-918b86ab5767">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f65d7acf-9540-4cfa-a845-3c0e25618ad3"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fromLocationType}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1086" y="0" width="40" height="15" uuid="8baa755d-2db1-48ce-914c-7cf4a1d6d539">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="354d7407-6740-442e-bd53-a3dfffcbaa63"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{frLoc}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1126" y="0" width="62" height="15" uuid="0b02f6ed-e004-46db-8160-bce9b9fca1b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4becd200-23c4-447a-bff3-b2b6c5664c29"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{frTerminal}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1188" y="0" width="87" height="15" uuid="a7d04f74-eab5-415d-b7ac-7dfbbbfc9bf4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7a24f8c-f5d6-466f-bcad-03746557a52c"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toLocationType}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1275" y="0" width="44" height="15" uuid="3fdbf83f-c4f7-4cbc-af52-fbb1171dee1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="547e4d05-f789-4a7b-a10c-c9b3b7a45068"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toLoc}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1319" y="0" width="66" height="15" uuid="166d45d4-c040-4891-88f2-f2cd996001bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96277deb-5ae8-4bc7-8ae4-a9a26939d459"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toTerminal}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1385" y="0" width="58" height="15" uuid="88f6a8e0-6508-41dd-9230-e3639ee2201f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b9f9e58-cac9-4a1b-91e1-e124b96776cd"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{issueDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1443" y="0" width="60" height="15" uuid="fa3e2da6-8d14-45ef-9e02-8f66bfac94d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43aef0ed-f88f-4e62-8a89-f7168c82285c"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1503" y="0" width="77" height="15" uuid="79a7f53d-fed3-42fc-8d4b-41f70d5b1b3a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b71f7e4-d115-4316-ad2f-b84624df353e"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{completeDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1580" y="0" width="69" height="15" uuid="42c944fc-aca5-441a-83b4-ba6140e1b707">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e16fd309-5c93-4c3c-a9b2-531451bf6140"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{invoiceDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1649" y="0" width="69" height="15" uuid="fb7263ea-bf82-4c38-8317-25449b417fe7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c5efbd2-79de-48ae-9f47-7d57710049ee"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cancelDate}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="1718" y="0" width="102" height="15" uuid="15e1e1b1-27c4-4877-8657-5f5a833ec690">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3691faed-4cdd-495b-b5b9-ecbb438d78dd"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recoveryRequired}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</summary>
+</jasperReport>

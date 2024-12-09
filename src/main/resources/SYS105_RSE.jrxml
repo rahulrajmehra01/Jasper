@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SYS105_RSE" pageWidth="1700" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="a6d8ff5b-c48a-47d9-97c8-5f6a00a33ecb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Style1" fontName="Courier New"/>
+	<parameter name="reportBy" class="java.lang.String"/>
+	<parameter name="module" class="java.lang.String"/>
+	<parameter name="reportByVoy" class="java.lang.String"/>
+	<parameter name="proformaPeriodFrom" class="java.lang.String"/>
+	<parameter name="proformaPeriodTo" class="java.lang.String"/>
+	<parameter name="eTDFrom" class="java.lang.String"/>
+	<parameter name="eTDTo" class="java.lang.String"/>
+	<parameter name="vessel" class="java.lang.String"/>
+	<parameter name="voyage" class="java.lang.String"/>
+	<parameter name="proformaCreatedFrom" class="java.lang.String"/>
+	<parameter name="proformaCreatedTo" class="java.lang.String"/>
+	<parameter name="location" class="java.lang.String"/>
+	<parameter name="port" class="java.lang.String"/>
+	<parameter name="point" class="java.lang.String"/>
+	<parameter name="status" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="eTA" class="java.lang.String"/>
+	<field name="eTD" class="java.lang.String"/>
+	<field name="aTA" class="java.lang.String"/>
+	<field name="aTD" class="java.lang.String"/>
+	<field name="module" class="java.lang.String"/>
+	<field name="activityDate" class="java.lang.String"/>
+	<field name="fullEmpty" class="java.lang.String"/>
+	<field name="localTs" class="java.lang.String"/>
+	<field name="cOCSOC" class="java.lang.String"/>
+	<field name="service" class="java.lang.String"/>
+	<field name="vessel" class="java.lang.String"/>
+	<field name="voyage" class="java.lang.String"/>
+	<field name="direction" class="java.lang.String"/>
+	<field name="portPoint" class="java.lang.String"/>
+	<field name="fromLocType" class="java.lang.String"/>
+	<field name="fromLocation" class="java.lang.String"/>
+	<field name="toLocType" class="java.lang.String"/>
+	<field name="toLocation" class="java.lang.String"/>
+	<field name="fromDate" class="java.lang.String"/>
+	<field name="toDate" class="java.lang.String"/>
+	<field name="mot" class="java.lang.String"/>
+	<field name="transactionCode" class="java.lang.String"/>
+	<field name="paymentFsc" class="java.lang.String"/>
+	<field name="proformaStatus" class="java.lang.String"/>
+	<field name="bound" class="java.lang.String"/>
+	<field name="pol" class="java.lang.String"/>
+	<field name="pod" class="java.lang.String"/>
+	<field name="pickUpDate" class="java.lang.String"/>
+	<field name="proformaAmount" class="java.lang.Number"/>
+	<field name="proformaCurrency" class="java.lang.String"/>
+	<field name="createdDate" class="java.lang.String"/>
+	<field name="completedDate" class="java.lang.String"/>
+	<field name="proformaNo" class="java.lang.String"/>
+	<field name="vendorCode" class="java.lang.String"/>
+	<field name="chargeCode" class="java.lang.String"/>
+	<field name="size" class="java.lang.String"/>
+	<field name="type" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Number"/>
+	<field name="remark" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="20" height="10" uuid="ee3df126-e956-4539-beac-50a4fc557cb2"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ETA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="0" width="52" height="10" uuid="4b079f4a-1dc9-48ac-bec8-699f2e6eb618"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Module]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="0" width="20" height="10" uuid="8cd8ae06-cbb8-4433-a929-4ae89d3e65f4"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ATD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="0" width="20" height="10" uuid="47633d9a-3322-4e90-9918-d9d630fb9cb4"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="0" width="20" height="10" uuid="f24bd13c-8fd9-48b1-8714-53d3e063632a"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ETD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="59" height="10" uuid="69aaae03-cdfe-4107-9745-c779b12b1a54"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Direction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="37" height="10" uuid="8bd7c11e-c592-43a8-b9c5-48610f62e8d2"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Voyage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="0" width="36" height="10" uuid="83531e2b-1cd4-45d5-8509-110074c61aec"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vessel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="44" height="10" uuid="f94dd056-2767-413d-960c-fbdd41466a56"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Service]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="0" width="50" height="20" uuid="b16bd6c5-f3cb-4db9-a3f0-8a69bf05010a"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Activity 
+Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="0" width="30" height="20" uuid="33ffbebf-b0fb-414d-bb38-9cc1ae8ee739"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Full 
+Empty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="0" width="36" height="20" uuid="00e1e7d6-a693-42d3-be00-70acf76aa2be"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Local 
+Ts]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="20" height="20" uuid="27caaf1c-5adf-4367-94d7-9c237eb68172"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Coc 
+Soc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="515" y="0" width="57" height="30" uuid="dc51183d-96bb-4121-aade-a73a4ad84597"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[From Loc 
+Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="39" height="30" uuid="1cadd093-7956-43c6-97a2-f5cf6543f0e7"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Port 
+/ 
+Point]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="618" y="0" width="29" height="30" uuid="c9a1477b-6f97-49de-88fb-5ce221bf0a41"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[To 
+Loc 
+Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="572" y="0" width="46" height="20" uuid="3e0050f1-4a70-4c59-8f1f-e08de4975d5d"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[From Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="734" y="0" width="33" height="20" uuid="31f3170a-7154-45ad-8bcc-23c1f2cde8fc"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[To 
+Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="34" height="20" uuid="83e38d11-350e-429d-b2a4-6cdfc7bbf0cc"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[From 
+Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="647" y="0" width="53" height="20" uuid="41acd598-023d-4986-9350-62b119472360"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[To Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="857" y="0" width="48" height="20" uuid="b3f4b3d8-f5dd-420b-beea-0509dd314d20"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Payment 
+Fsc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="792" y="0" width="65" height="20" uuid="b94f2678-a8c1-40a5-b3ac-77960a393ad6"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Transaction 
+Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="767" y="0" width="25" height="20" uuid="8930136b-9d79-4259-b5e7-f3164941643b"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="994" y="0" width="21" height="10" uuid="8b3d1542-7a72-4aaa-a914-0eeee5dcdd21"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pol]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="957" y="0" width="37" height="10" uuid="fc50e7c5-55ee-40ec-a50e-37d32ff85e42"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bound]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="905" y="0" width="52" height="20" uuid="cb222518-853e-4fff-a35d-dea953a87edc"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Proforma 
+Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1035" y="0" width="38" height="20" uuid="a974273e-c411-4e15-a9b5-ec97c9ad6454"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pickup Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1015" y="0" width="20" height="10" uuid="e58e40fe-407d-4058-b16c-8858ee427864"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pod]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1073" y="0" width="53" height="20" uuid="dbabe9f5-2359-4d27-a29e-866e6b1f5302"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Proforma Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1132" y="0" width="50" height="20" uuid="a5151719-b0b3-4eb7-a046-22bcedf88cff"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Proforma Currency]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1182" y="0" width="48" height="20" uuid="6852ed20-2c40-4816-b4ac-4f1009bc7c0c"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Created 
+Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1230" y="0" width="58" height="20" uuid="1cbf9595-be80-4d6d-80b1-1341bf8db342"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Completed 
+Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1288" y="0" width="54" height="20" uuid="05e43932-ba7c-4195-b9bc-12c470632955"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Proforma No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1342" y="0" width="36" height="20" uuid="e2e4dc51-e280-4671-bc61-702e51f7f72a"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vendor 
+Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1378" y="0" width="36" height="20" uuid="d2c2eee4-fc22-48eb-87b9-c77e7a283fec"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Charge
+Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1494" y="0" width="166" height="20" uuid="f89900bf-7fbb-4331-9254-dfb39a6814cf"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Remark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1414" y="0" width="28" height="20" uuid="75635b73-be67-4f24-aaa1-6cd5ad0d9c73"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Size]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1442" y="0" width="28" height="20" uuid="15d7b8ed-716b-49a4-beef-17a5bfb10fb5"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1470" y="0" width="24" height="20" uuid="9b5f97a2-e5f4-487b-aa1a-0c104c9e313c"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="20" height="35" uuid="12c0acf3-1780-459c-b905-46e6f48f2110">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a188ad7a-a498-4ebc-aceb-632f285d27af"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eTA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="27" y="0" width="20" height="35" uuid="6e41ad0b-2e05-4378-91d3-500355b75f8c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29f01651-9c06-4b7a-95eb-1a688d7d6588"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eTD}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="54" y="0" width="20" height="35" uuid="c9276f08-3278-434d-b93f-5646a65a2882">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31054a18-44a3-46cf-861b-c694735866a2"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aTA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="0" width="20" height="35" uuid="b977423e-18f5-4aa3-ad1a-75826e65e05e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81cffbab-58ce-4ab4-ad14-2c9a57fde2ad"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aTD}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="112" y="0" width="52" height="35" uuid="ff4bbcbf-34f5-495b-bd9c-e1ba6f62e8db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b67ac07-3eb5-446a-abdb-03afd2009618"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{module}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="164" y="0" width="50" height="35" uuid="25832878-eacd-4a2c-92e3-d0fbac944ef8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15551fe9-8e69-43ed-af22-d4fe8f755699"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{activityDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="214" y="0" width="30" height="35" uuid="ed31a908-5313-40e4-a410-af54c2858287">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82337b5d-fdb4-4454-8e58-af22dc848d5a"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fullEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="244" y="0" width="36" height="35" uuid="6250191d-cdee-4de5-b7d3-4c480149c8d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e3555d8-a89a-4b39-a720-209e07cb3731"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{localTs}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="280" y="0" width="20" height="35" uuid="78c21fee-1e64-4b27-9ba6-0e8ef4186552">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ffcb5bf-9885-43b5-927e-e70149887a28"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cOCSOC}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="300" y="0" width="44" height="35" uuid="df1b32ca-2cfc-4898-991e-36a1fc0a5418">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3dfb893-d338-448d-81c0-07098e5c440e"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{service}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="344" y="0" width="36" height="35" uuid="11d432a4-2e99-4568-b903-480d3577a743">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="75f335a8-9bc0-4aaa-bb47-72541d2c402c"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="380" y="0" width="37" height="35" uuid="14bd5130-943e-4b5f-8d36-77e718a6fb17">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="001d025c-1f92-42c2-a01c-0d10a7908570"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{voyage}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="417" y="0" width="59" height="35" uuid="739ce24a-5f5d-432b-b11c-1a78b2fad5c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="372ce4e8-35e8-4640-89ba-086530d7de05"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direction}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="476" y="0" width="39" height="35" uuid="bba12dd4-6398-49b8-b027-f7d9a9d372e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="291dcd67-40b5-4673-83b5-34c70fbaf78d"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{portPoint}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="515" y="0" width="57" height="35" uuid="a28a8ef3-1247-4381-95e9-57156a3f7d11">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe142062-2f80-4d11-9b36-64875666c094"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fromLocType}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="572" y="0" width="46" height="35" uuid="159d4ef9-154f-4451-bd14-54c7baf4c742">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d11c1599-ca09-4e37-891d-b7ec2fa1c3cf"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fromLocation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="618" y="0" width="29" height="35" uuid="815b52e1-80f9-4d94-b423-fed5543708e8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="522350d3-44eb-4d5f-a9f6-730ba0e546a7"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toLocType}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="647" y="0" width="53" height="35" uuid="1a7649d8-a5c1-4dab-8db5-e2d29c76f8af">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="62d2acdf-a544-4e0e-86f3-f0cfc804412f"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toLocation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="700" y="0" width="34" height="35" uuid="920729f5-ee43-4863-a745-8859826e7c8a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d4a3d46-d659-4f1c-bc8f-9536d9b63e1f"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fromDate}==null ? "-" : $F{fromDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="734" y="0" width="33" height="35" uuid="814bb59c-123a-4337-8bec-bd5d7581e3a6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0922207c-d8b5-4971-a530-5df9d4cc7d3d"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toDate}==null ? "-" : $F{toDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="767" y="0" width="25" height="35" uuid="d3bf3270-6346-43c0-adf9-cb2e6e3c6d0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02ef2f94-cec8-41f4-8993-a7d299fd26a1"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="792" y="0" width="65" height="35" uuid="a7d7b3d9-ce14-4bb2-bdd7-5209c88bceb1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e64d37d9-832e-4215-baa6-4170c23b841b"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transactionCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="857" y="0" width="48" height="35" uuid="d1e74c52-c9c1-4559-b041-2e9e4e5e2a48">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e4dc074-a712-4f62-964d-f53bafef5e9d"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paymentFsc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="905" y="0" width="52" height="35" uuid="d97ac157-e749-4076-89db-fe1916537725">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1e3adb5-8b27-4881-bcb0-bf7b0815a1ed"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proformaStatus}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="957" y="0" width="37" height="35" uuid="91d56cf6-13e1-4f66-a0a8-663835f52f57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f04c6fba-c886-4ee8-a53a-bc3ad29a73a7"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bound}==null ? "-" : $F{bound}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="994" y="0" width="21" height="35" uuid="d049e5ad-5e7a-4077-9984-f202e2254684">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c40e3d33-810a-48f8-88ae-1b3a4a1852dc"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pol}==null ? "-" : $F{pol}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1015" y="0" width="20" height="35" uuid="8b8983ee-67fc-4274-b653-adf28166e4dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="131f346c-1779-45ed-8c72-dbd62764430f"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pod}==null ? "-" : $F{pod}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1035" y="0" width="38" height="35" uuid="4fe58273-114b-47b9-9e79-50d37918ed38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77fa4dfb-66e7-4fc1-83fc-d3d696972724"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pickUpDate}==null ? "-" : $F{pickUpDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1073" y="0" width="53" height="35" uuid="90fb84ca-25bd-4f33-83d0-ecf14e3a3adb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51557f26-031f-4b7e-80a7-d1158119c85c"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proformaAmount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1132" y="0" width="50" height="35" uuid="9588168f-63dd-44d3-b012-8521827f455e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0bad1114-b125-490b-a350-12425a71c7e9"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proformaCurrency}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1182" y="0" width="48" height="35" uuid="38d66abe-a216-4418-adb0-b14bff3bb5df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3f4e973-b213-4bbc-84ce-7f63b6fa39a0"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1230" y="0" width="58" height="35" uuid="ce38767c-5d5e-43b8-8437-7db5c16b9528">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="160dd771-4a51-4947-9c4e-7aa12888d88e"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{completedDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1288" y="0" width="54" height="35" uuid="98139179-b186-4417-832a-0b167b4cb9ba">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c0a82ce-f8f5-4b6c-969b-dbea8c92fd12"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proformaNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1342" y="0" width="36" height="35" uuid="6e3e58ec-7d4d-4958-8f57-f1050ecf7491">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3b1dbcb-d2d0-4db9-8ed9-c383d73ba4a8"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vendorCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1378" y="0" width="36" height="35" uuid="98f06db3-10d4-436a-9cc6-dce223dcfd27">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="01f8aefc-62f1-4bc7-a577-b55db16e6ed6"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chargeCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1414" y="0" width="28" height="35" uuid="1eb128f4-0abb-4940-9ed5-714a6303597c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1f24d3a-37b3-4fe2-8644-d5b6060e12b9"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{size}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1442" y="0" width="28" height="35" uuid="4298fa36-f6bd-4178-b245-8e05ca80c77d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c2af49f1-e095-4715-9e21-f90535c7cded"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1470" y="0" width="24" height="35" uuid="a299f0ed-5400-46c4-975e-111dbdde2439">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9cddf17b-e29f-4b1c-8958-b3ae0294b9e8"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="1496" y="0" width="164" height="35" uuid="46315ab1-d78e-41f3-adf9-c0dd8e2556cf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d633be46-c75a-446c-b813-1ce7806dbf53"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Courier New" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remark}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</summary>
+</jasperReport>
